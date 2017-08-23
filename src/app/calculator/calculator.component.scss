@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.calc {
+    background-color: purple;
+    width: 35%;
+}
+
+.result {
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 5px;
+}
+
+.row {
+    padding: 1px;
+}
+
+button {
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+}
