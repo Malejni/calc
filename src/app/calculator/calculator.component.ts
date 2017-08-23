@@ -105,5 +105,8 @@ export class CalculatorComponent {
       this.result = '';
        this.total = [];
     }
+    resetCE () {
+      this.result = '';
+    }
 
 }
