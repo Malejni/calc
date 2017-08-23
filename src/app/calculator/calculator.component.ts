@@ -101,4 +101,9 @@ export class CalculatorComponent {
         this.clear = true;
     }
 
+    reset () {
+      this.result = '';
+       this.total = [];
+    }
+
 }
