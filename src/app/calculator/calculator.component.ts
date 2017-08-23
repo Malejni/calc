@@ -51,19 +51,19 @@ export class CalculatorComponent {
         this.result = '';
 
         if (this.total.length === 2) {
-            var a = Number(this.total[0]);
-            var b = Number(this.total[1]);
+            const a = Number(this.total[0]);
+            const b = Number(this.total[1]);
 
             if (this.previous_operator === '+') {
                 var total = a + b;
             } else if (this.previous_operator === '-') {
-                var total = a - b;
+                 total = a - b;
             } else if (this.previous_operator === '*') {
-                var total = a * b;
+                 total = a * b;
             } else {
-                var total = a / b;
+                 total = a / b;
             }
-            var answer = total;
+            const answer = total;
 
             this.total = [];
             this.total.push(answer);
@@ -79,17 +79,17 @@ export class CalculatorComponent {
     }
 
     getTotal() {
-        var a = Number(this.total[0]);
-        var b = Number(this.result);
+        const a = Number(this.total[0]);
+        const b = Number(this.result);
 
         if (this.previous_operator === '+') {
             var total = a + b;
         } else if (this.previous_operator === '-') {
-            var total = a - b;
+             total = a - b;
         } else if (this.previous_operator === '*') {
-            var total = a * b;
+             total = a * b;
         } else {
-            var total = a / b;
+             total = a / b;
         }
 
         if (isNaN(total)) {
