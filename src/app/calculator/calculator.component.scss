@@ -1,18 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .calc {
     background-color: purple;
-    width: 35%;
+    width: 32%;
+    border: 1px solid grey;
 }
 
 .result {
     font-size: 1.5em;
     font-family: 'Roboto', sans-serif;
     color: white;
-    padding: 5px;
+    padding: 10px 0 0 10px;
+    // border: 0.2px solid white;
 }
 
 .row {
-    padding: 1px;
+    padding: 2px;
+}
+
+.buttons {
+    padding: 0 10px 10px 10px;
 }
 
 button {
@@ -20,5 +31,7 @@ button {
     font-family: 'Roboto', sans-serif;
     height: 50px;
     width: 50px;
-    border: 2px solid white;
+    // background-color: purple;
+    border: 1px solid white;
+    background: linear-gradient(180deg, white, gray);
 }
