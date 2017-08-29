@@ -53,9 +53,9 @@ export class CalculatorComponent {
         if (this.total.length === 2) {
             const a = Number(this.total[0]);
             const b = Number(this.total[1]);
-
+            let total;
             if (this.previous_operator === '+') {
-                var total = a + b;
+                 total = a + b;
             } else if (this.previous_operator === '-') {
                  total = a - b;
             } else if (this.previous_operator === '*') {
@@ -81,9 +81,9 @@ export class CalculatorComponent {
     getTotal() {
         const a = Number(this.total[0]);
         const b = Number(this.result);
-
+        let total;
         if (this.previous_operator === '+') {
-            var total = a + b;
+             total = a + b;
         } else if (this.previous_operator === '-') {
              total = a - b;
         } else if (this.previous_operator === '*') {
@@ -101,12 +101,17 @@ export class CalculatorComponent {
         this.clear = true;
     }
 
-    reset () {
+    reset() {
       this.result = '';
        this.total = [];
     }
-    resetCE () {
+    resetCE() {
       this.result = '';
+    }
+    backspace() {
+      const index = this.result.length - 1;
+      console.log(typeof this.result);
+      this.result = this.result.slice(0, index);
     }
 
 }
