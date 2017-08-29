@@ -1,8 +1,5 @@
 
-<div class="result">Result:{{ result }}</div>
-<form>
-    <input type="number" name="inputNumber" step="0.01" min="0" max="9" placeholder="click or type number">
-</form>
+<div class="result">&nbsp;{{ result }}</div>
 <div class="buttons">
   <div class="row"> 
     <button (click)="addToCalculation('7')">7</button>
@@ -28,7 +25,9 @@
     <button (click)="getTotal()">=</button>
     <button (click)="calculate('+')">+</button>
   </div>
-  <button (click)="reset()">C</button>
-  <button (click)="resetCE()">CE</button>
-  <button (click)="backspace()">DEL</button>
+  <div class="row">
+    <button (click)="reset()">C</button>
+    <button (click)="resetCE()">CE</button>
+    <button (click)="backspace()">DEL</button>  
+</div>
 </div>

@@ -3,11 +3,15 @@
     margin: 0;
     padding: 0;
 }
+body {
+    background:black;
+}
 
-.calc {
+:host {
     background-color: purple;
-    width: 32%;
+    width: 236px;
     border: 1px solid #cbc9c9;
+    display:block;
 }
 
 .result {
@@ -15,7 +19,7 @@
     font-family: 'Roboto', sans-serif;
     color: white;
     padding: 10px 0 0 10px;
-    // border: 0.2px solid white;
+    border: 0.2px solid white;
 }
 
 .row {
