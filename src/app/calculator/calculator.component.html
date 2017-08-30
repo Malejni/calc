@@ -2,30 +2,30 @@
 
 <div class="buttons">
   <div class="row"> 
-    <button (click)="addToCalculation('7')">7</button>
-    <button (click)="addToCalculation('8')">8</button>
-    <button (click)="addToCalculation('9')">9</button>
-    <button (click)="calculate('/')">/</button>
+    <button (click)="addToCalculation('7'); playAudio();">7</button>
+    <button (click)="addToCalculation('8'); playAudio();">8</button>
+    <button (click)="addToCalculation('9'); playAudio();">9</button>
+    <button (click)="calculate('/'); playAudio();">/</button>
   </div>
   <div class="row"> 
-    <button (click)="addToCalculation('4')">4</button>
-    <button (click)="addToCalculation('5')">5</button>
-    <button (click)="addToCalculation('6')">6</button>
-    <button (click)="calculate('*')">X</button>
+    <button (click)="addToCalculation('4'); playAudio();">4</button>
+    <button (click)="addToCalculation('5'); playAudio();">5</button>
+    <button (click)="addToCalculation('6'); playAudio();">6</button>
+    <button (click)="calculate('*'); playAudio();">X</button>
   </div>
   <div class="row"> 
-    <button (click)="addToCalculation('1')">1</button>
-    <button (click)="addToCalculation('2')">2</button>
-    <button (click)="addToCalculation('3')">3</button>
-    <button (click)="calculate('-')">-</button>
+    <button (click)="addToCalculation('1'); playAudio();">1</button>
+    <button (click)="addToCalculation('2'); playAudio();">2</button>
+    <button (click)="addToCalculation('3'); playAudio();">3</button>
+    <button (click)="calculate('-'); playAudio();">-</button>
   </div>
   <div class="row"> 
-    <button (click)="addToCalculation('0')">0</button>
-    <button (click)="addToCalculation('.')">.</button>
-    <button (click)="getTotal()">=</button>
-    <button (click)="calculate('+')">+</button>
+    <button (click)="addToCalculation('0'); playAudio();">0</button>
+    <button (click)="addToCalculation('.'); playAudio();">.</button>
+    <button (click)="getTotal(); playAudio();">=</button>
+    <button (click)="calculate('+'); playAudio();">+</button>
   </div>
-  <button (click)="reset()">C</button>
-  <button (click)="resetCE()">CE</button>
-  <button (click)="backspace()">DEL</button>
+  <button (click)="reset(); playAudio();">C</button>
+  <button (click)="resetCE(); playAudio();">CE</button>
+  <button (click)="backspace(); playAudio();">DEL</button>
 </div>

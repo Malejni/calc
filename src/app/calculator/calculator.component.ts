@@ -114,4 +114,9 @@ export class CalculatorComponent {
       this.result = this.result.slice(0, index);
     }
 
+     playAudio() {
+        var audio = new Audio("./assets/click.mp3");
+        audio.play();
+    }
+
 }
