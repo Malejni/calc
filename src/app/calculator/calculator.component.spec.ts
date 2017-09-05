@@ -79,6 +79,7 @@ describe('CalculatorComponent', () => {
     btn[0].nativeElement.click();
     btn[14].nativeElement.click();
     fixture.detectChanges();
+
     expect(screen.nativeElement.innerHTML).toBe('Result:0');
   });
 });
