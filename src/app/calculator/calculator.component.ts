@@ -71,6 +71,8 @@ export class CalculatorComponent {
                  total = Math.tan(a);
             } else if (this.previous_operator === 'sin') {
                  total = Math.sin(a);
+            } else if (this.previous_operator === 'sqrt') {
+                 total = Math.sqrt(a);
             } else {
                  total = a / b;
             }
@@ -109,6 +111,8 @@ export class CalculatorComponent {
             total = Math.tan(a);
         } else if (this.previous_operator === 'sin') {
             total = Math.sin(a);
+        } else if (this.previous_operator === 'sqrt') {
+            total = Math.sqrt(a);
         } else {
              total = a / b;
         }
