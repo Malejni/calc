@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+    background: black;
+}
+
+:host {
+    display: flex;
+    text-align: center;
+    background: linear-gradient(180deg, blueviolet, #40E0CF);
+    width: 80%;
+    max-width:300px;
+    height: 80%;
+    border: 1px solid #cbc9c9;
+    display: block;
+}
+
+.result {
+    font-size: 1.5em;
+    min-height:35px;
+    font-family: 'Roboto', sans-serif;
+    color: blueviolet;
+    padding: 10px 0 0 10px;
+    border: 10px solid blueviolet;
+    background-color: white;
+    text-align: left;
+}
+
+.row {
+    padding: 2px;
+}
+
+.buttons {
+    padding: 0 10px 10px 10px;
+}
+
+button {
+    font-size: 1.3em;
+    font-family: 'Roboto', sans-serif;
+    height: 50px;
+    width: 50px;
+}
