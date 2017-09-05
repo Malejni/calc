@@ -23,6 +23,8 @@ before_script:
 - npm install karma
 - npm install -g karma
 - npm install
-- ng build
 
-script: karma start config/karma.conf.js --single-run
+
+script:
+- karma start config/karma.conf.js --single-run
+- ng build --prod
