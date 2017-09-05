@@ -39,7 +39,7 @@ describe('CalculatorComponent', () => {
     btn[0].nativeElement.click();
     btn[14].nativeElement.click();
     fixture.detectChanges();
-    expect(screen.nativeElement.innerHTML).toBe('Result:1');
+    expect(screen.nativeElement.innerHTML).toBe('1');
   });
   it('should calculate according to mutliply', () => {
     const btn = fixture.debugElement.queryAll(By.css('button'));
@@ -49,7 +49,7 @@ describe('CalculatorComponent', () => {
     btn[0].nativeElement.click();
     btn[14].nativeElement.click();
     fixture.detectChanges();
-    expect(screen.nativeElement.innerHTML).toBe('Result:49');
+    expect(screen.nativeElement.innerHTML).toBe('49');
   });
   it('should calculate according to plus', () => {
     const btn = fixture.debugElement.queryAll(By.css('button'));
@@ -59,7 +59,7 @@ describe('CalculatorComponent', () => {
     btn[0].nativeElement.click();
     btn[14].nativeElement.click();
     fixture.detectChanges();
-    expect(screen.nativeElement.innerHTML).toBe('Result:14');
+    expect(screen.nativeElement.innerHTML).toBe('14');
   });
   it('should calculate according to minus', () => {
     const btn = fixture.debugElement.queryAll(By.css('button'));
@@ -69,7 +69,7 @@ describe('CalculatorComponent', () => {
     btn[0].nativeElement.click();
     btn[14].nativeElement.click();
     fixture.detectChanges();
-    expect(screen.nativeElement.innerHTML).toBe('Result:0');
+    expect(screen.nativeElement.innerHTML).toBe('0');
   });
   it('should calculate according to modulus', () => {
     const btn = fixture.debugElement.queryAll(By.css('button'));
@@ -79,6 +79,6 @@ describe('CalculatorComponent', () => {
     btn[0].nativeElement.click();
     btn[14].nativeElement.click();
     fixture.detectChanges();
-    expect(screen.nativeElement.innerHTML).toBe('Result:0');
+    expect(screen.nativeElement.innerHTML).toBe('0');
   });
 });
