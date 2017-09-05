@@ -22,6 +22,7 @@ export class CalculatorComponent {
         this.total = [];
         this.clear = false;
         this.previous_operator = false;
+        console.log(5 % 2);
     }
 
     addToCalculation(value) {
@@ -58,6 +59,8 @@ export class CalculatorComponent {
                  total = a + b;
             } else if (this.previous_operator === '-') {
                  total = a - b;
+            } else if (this.previous_operator === '%') {
+                 total = a % b;
             } else if (this.previous_operator === '*') {
                  total = a * b;
             } else {
@@ -86,6 +89,8 @@ export class CalculatorComponent {
              total = a + b;
         } else if (this.previous_operator === '-') {
              total = a - b;
+        } else if (this.previous_operator === '%') {
+             total = a % b;
         } else if (this.previous_operator === '*') {
              total = a * b;
         } else {
@@ -110,13 +115,12 @@ export class CalculatorComponent {
     }
     backspace() {
       const index = this.result.length - 1;
-      console.log(typeof this.result);
       this.result = this.result.slice(0, index);
     }
 
      playAudio() {
-        var audio = new Audio("./assets/click.mp3");
-        audio.play();
+       const audio = new Audio('./assets/click.mp3');
+       audio.play();
     }
 
 }

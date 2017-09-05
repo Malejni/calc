@@ -25,7 +25,14 @@
     <button (click)="getTotal(); playAudio();">=</button>
     <button (click)="calculate('+'); playAudio();">+</button>
   </div>
+  <div class="row">
   <button (click)="reset(); playAudio();">C</button>
   <button (click)="resetCE(); playAudio();">CE</button>
   <button (click)="backspace(); playAudio();">DEL</button>
+  <button (click)="calculate('%'); playAudio();">%</button>
+  </div>
+  <div class="row">
+    <button (click)="addToCalculation('3.14'); playAudio();">PI</button>
+    <button (click)="addToCalculation('2.72'); playAudio();">e</button>
+  </div>
 </div>
