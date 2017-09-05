@@ -1,4 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
 :host {
     display:flex;
     justify-content: center;
+    background: linear-gradient(#aab7f8, #ff75c6);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    min-height: 100vh;
+    position: absolute;
+    width: 100vW;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

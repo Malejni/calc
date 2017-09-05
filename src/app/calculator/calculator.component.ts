@@ -93,7 +93,21 @@ export class CalculatorComponent {
              total = a % b;
         } else if (this.previous_operator === '*') {
              total = a * b;
-        } else {
+        } else if (this.previous_operator === '**') {
+            total = a ** b;
+        }else if (this.previous_operator === '**2') {
+            total = a ** 2;
+        }else if (this.previous_operator === '**3') {
+            total = a ** 3;
+        }
+        
+        
+        else if (this.previous_operator === 'sin') {
+            console.log("A is:", a);
+            total = Math.sin(a);
+        } else if (this.previous_operator === 'cos') {
+            total = Math.cos(a);
+        }else {
              total = a / b;
         }
 

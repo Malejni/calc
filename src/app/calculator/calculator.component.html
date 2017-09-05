@@ -34,5 +34,13 @@
   <div class="row">
     <button (click)="addToCalculation('3.14'); playAudio();">PI</button>
     <button (click)="addToCalculation('2.72'); playAudio();">e</button>
+    <button (click)="calculate('sin'); playAudio();">sin</button>
+    <button (click)="calculate('cos'); playAudio();">cos</button>
+  </div>
+  <div class="row">
+    
+    <button (click)="calculate('**2'); playAudio();">x2</button>
+    <button (click)="calculate('**3'); playAudio();">x3</button>
+    <button (click)="calculate('**y'); playAudio();">xy</button>
   </div>
 </div>
