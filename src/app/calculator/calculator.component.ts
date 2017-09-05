@@ -63,6 +63,14 @@ export class CalculatorComponent {
                  total = a % b;
             } else if (this.previous_operator === '*') {
                  total = a * b;
+            } else if (this.previous_operator === '^') {
+                 total = Math.pow(a, b);
+            } else if (this.previous_operator === 'cos') {
+                 total = Math.cos(a);
+            } else if (this.previous_operator === 'tan') {
+                 total = Math.tan(a);
+            } else if (this.previous_operator === 'sin') {
+                 total = Math.sin(a);
             } else {
                  total = a / b;
             }
@@ -93,6 +101,14 @@ export class CalculatorComponent {
              total = a % b;
         } else if (this.previous_operator === '*') {
              total = a * b;
+        } else if (this.previous_operator === '^') {
+             total = Math.pow(a, b);
+        } else if (this.previous_operator === 'cos') {
+            total = Math.cos(a);
+        } else if (this.previous_operator === 'tan') {
+            total = Math.tan(a);
+        } else if (this.previous_operator === 'sin') {
+            total = Math.sin(a);
         } else {
              total = a / b;
         }
